@@ -9,7 +9,7 @@ echo "\n\n";
 
 $hunter = new Charactere($hunterName, 80);
 
-$monster = new Monster(2500, "Nergigante", 25);
+$monster = new Monster(2000, "Nergigante", 20);
 
 echo "Que souhaitez vous mangez avant de partie à la chasse \n 1 - HP : +50 Stamina +0\n 2 - HP : +25 Stamina +25\n 3 - HP : +0 Stamina +50\n\n";
 $manger = readline();
@@ -56,7 +56,7 @@ while (!$monster->isDead()) {
     }
     var_dump($attack);
     if($attack) {
-        if ((rand(0, 100) <= 35) && ($line != 'c')) {
+        if ((rand(0, 100) <= 40) && ($line != 'c')) {
             echo "-Vous avez esquiver son attaque \n\n";
         } else {
             echo '-Le ' . $monster->getName() . ' vous inflige ' . $hunter->attack($monster) . " Dégats \n\n";

@@ -45,7 +45,7 @@ Class Monster
 
     public function isAttack()
     {
-        if (rand(0, 100) >= 10) {
+        if (rand(0, 100) >= 15) {
             if ($this->setAttack() == 'small') {
                 echo '-Le ' . $this->getName() . " vous attaque\n\n";
             } else {
@@ -60,7 +60,7 @@ Class Monster
 
     public function setAttack()
     {
-        if (rand(0, 100) > 25) {
+        if (rand(0, 100) >= 20) {
             $this->attack = $this->smallAttack;
             return 'small';
         } else {
