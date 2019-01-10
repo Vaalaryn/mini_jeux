@@ -7,11 +7,11 @@ Class Charactere
 
     private $life;
 
-    private $maxLife;
+    public $maxLife;
 
     private $stamina;
 
-    private $maxStamina;
+    public $maxStamina;
 
     //private $weapon;
 
@@ -32,12 +32,60 @@ Class Charactere
         $this->maxStamina = $this->stamina;
         $this->potions = 10;
         $this->attack = $attack;
+        $this->dodge = false;
+    }
+
+    public function getLife()
+    {
+        return $this->life;
+    }
+
+    public function getStamina()
+    {
+        return $this->stamina;
+    }
+
+    public function getPotions()
+    {
+        return $this->potions;
+    }
+
+    public function getAttack()
+    {
+        return $this->attack;
+    }
+
+    public function getName()
+    {
+        return $this->name;
+    }
+
+    public function getDodge()
+    {
+        return $this->dodge;
+    }
+
+    public function setLife($life)
+    {
+        $this->life = $life;
+    }
+
+    public function setStamina()
+    {
+        $this->stamina -= 15;
+    }
+
+    public function resetDodge()
+    {
+        $this->dodge = false;
     }
 
     public function eat($lifeBonus, $staminaBonus)
     {
         $this->life += $lifeBonus;
+        $this->maxLife += $lifeBonus;
         $this->stamina += $staminaBonus;
+        $this->maxStamina += $staminaBonus;
     }
 
     public function takePotion()
@@ -49,6 +97,9 @@ Class Charactere
             } else {
                 $this->life += 50;
             }
+            echo "Vous avez etez soigné\n";
+        }else {
+            echo "vous n'avez plus de potions\n";
         }
     }
 
@@ -59,16 +110,28 @@ Class Charactere
         } else {
             $this->stamina += 30;
         }
+        echo "vous vous etes reposer\n";
     }
 
     public function isTired()
     {
-        return $this->stamina > 0;
+        return !($this->stamina <= 0);
     }
 
     public function wantToDodge()
     {
         $this->dodge = true;
+    }
+
+    public function attack($striker, $chargeAttack = 1)
+    {
+        $this->life -= $striker->getAttack() * $chargeAttack;
+        return $striker->getAttack() * $chargeAttack;
+    }
+
+    public function isDead()
+    {
+        return $this->life <= 0;
     }
 
 }
