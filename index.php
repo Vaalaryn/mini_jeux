@@ -9,7 +9,7 @@ echo "\n\n";
 
 $hunter = new Charactere($hunterName, 80);
 
-$monster = new Monster(500, "Nergigante", 25);
+$monster = new Monster(2500, "Nergigante", 25);
 
 echo "Que souhaitez vous mangez avant de partie à la chasse \n 1 - HP : +50 Stamina +0\n 2 - HP : +25 Stamina +25\n 3 - HP : +0 Stamina +50\n\n";
 $manger = readline();
@@ -37,7 +37,7 @@ while (!$monster->isDead()) {
 
     switch ($line) {
         case 'r':
-            $hunter->rest;
+            $hunter->rest();
             break;
         case 'a':
             echo '-Vous avez infliger ' . $monster->attack($hunter) . ' Dégats au ' . $monster->getName() . "\n\n";
@@ -54,15 +54,17 @@ while (!$monster->isDead()) {
             $hunter->takePotion();
             break;
     }
-
-    if (rand(0, 100) <= 35 && $line != 'c' && $attack) {
-        echo "-Vous avez esquiver son attaque \n\n";
-    } else {
-        echo '-Le ' . $monster->getName() . ' vous inflige ' . $hunter->attack($monster) . " Dégats \n\n";
+    var_dump($attack);
+    if($attack) {
+        if ((rand(0, 100) <= 35) && ($line != 'c')) {
+            echo "-Vous avez esquiver son attaque \n\n";
+        } else {
+            echo '-Le ' . $monster->getName() . ' vous inflige ' . $hunter->attack($monster) . " Dégats \n\n";
+        }
     }
 
     if ($hunter->isDead()) {
-        echo "Vous etes tombé dans les pommes et rammener au camps , retenter votre chance la prochaine fois. \n";
+        echo "Vous etes tombé dans les pommes et rammener au camps , retenter votre chance la prochaine fois. \n(il restait {$monster->getLife()} de PV)";
         break;
     }
 

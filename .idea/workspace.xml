@@ -7,9 +7,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cc502bdf-29d8-43cf-83cc-1cc806bf8aad" name="Default Changelist" comment="First Commit">
-      <change beforePath="$PROJECT_DIR$/class/charactere.php" beforeDir="false" afterPath="$PROJECT_DIR$/class/charactere.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/class/manager.php" beforeDir="false" afterPath="$PROJECT_DIR$/class/manager.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/class/monster.php" beforeDir="false" afterPath="$PROJECT_DIR$/class/monster.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -20,11 +17,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/class/charactere.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="646">
-              <caret line="74" column="25" selection-start-line="74" selection-start-column="25" selection-end-line="74" selection-end-column="25" />
+              <caret line="110" column="33" lean-forward="true" selection-start-line="110" selection-start-column="11" selection-end-line="110" selection-end-column="33" />
             </state>
           </provider>
         </entry>
@@ -32,17 +29,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/class/monster.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="334">
-              <caret line="55" column="19" selection-start-line="55" selection-start-column="19" selection-end-line="55" selection-end-column="19" />
+            <state relative-caret-position="368">
+              <caret line="54" column="16" lean-forward="true" selection-start-line="54" selection-start-column="16" selection-end-line="54" selection-end-column="16" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="410">
-              <caret line="48" column="12" selection-start-line="48" selection-start-column="12" selection-end-line="48" selection-end-column="12" />
+            <state relative-caret-position="447">
+              <caret line="66" column="152" selection-start-line="66" selection-start-column="152" selection-end-line="66" selection-end-column="152" />
             </state>
           </provider>
         </entry>
@@ -66,8 +63,8 @@
         <option value="$PROJECT_DIR$/class/parts.php" />
         <option value="$PROJECT_DIR$/class/manager.php" />
         <option value="$PROJECT_DIR$/class/monster.php" />
-        <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/class/charactere.php" />
+        <option value="$PROJECT_DIR$/index.php" />
       </list>
     </option>
   </component>
@@ -128,12 +125,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1547139519222</updated>
-      <workItem from="1547139523015" duration="17191000" />
+      <workItem from="1547139523015" duration="18480000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="17191000" />
+    <option name="totallyTimeSpent" value="18480000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -207,22 +204,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/class/monster.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="334">
-          <caret line="55" column="19" selection-start-line="55" selection-start-column="19" selection-end-line="55" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="410">
-          <caret line="48" column="12" selection-start-line="48" selection-start-column="12" selection-end-line="48" selection-end-column="12" />
+        <state relative-caret-position="368">
+          <caret line="54" column="16" lean-forward="true" selection-start-line="54" selection-start-column="16" selection-end-line="54" selection-end-column="16" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/class/charactere.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="646">
-          <caret line="74" column="25" selection-start-line="74" selection-start-column="25" selection-end-line="74" selection-end-column="25" />
+          <caret line="110" column="33" lean-forward="true" selection-start-line="110" selection-start-column="11" selection-end-line="110" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="447">
+          <caret line="66" column="152" selection-start-line="66" selection-start-column="152" selection-end-line="66" selection-end-column="152" />
         </state>
       </provider>
     </entry>
